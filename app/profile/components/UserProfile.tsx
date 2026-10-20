@@ -42,7 +42,6 @@ interface UserProfileProps {
 const UserProfile: React.FC<UserProfileProps> = ({
   onEditProfile,
   onChangePassword,
-  onLogout,
   className = "",
 }) => {
   const { user, isLoading, getUserData } = useAuth();
@@ -262,11 +261,3 @@ const UserProfile: React.FC<UserProfileProps> = ({
 };
 
 export default UserProfile;
-
-/* 
-
-      <form action="/api/auth/sign-out" method="post">
-        <button className="button block" type="submit">
-          Sign out
-        </button>
-      </form>*/
